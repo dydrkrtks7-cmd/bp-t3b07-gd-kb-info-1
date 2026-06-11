@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공덕 노래방 정보 — 여기 다 있다</title>
+    <meta name="description" content="공덕 노래방 정보, 여기 다 있다. 삐까번쩍한 인테리어? 그런 거 없다. 오직 미친 가성비와 자유로운 분위기. 공덕에서 노래방 찾는다면 010-6279-0862로 전화해라.">
+    <meta name="keywords" content="공덕 노래방, 공덕 노래방 정보, 공덕 노래방 추천, 공덕 코인노래방, 공덕 가성비 노래방, 마포 노래방, 공덕역 노래방">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <link rel="canonical" href="https://t3b07-gd-kb-info-1.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b07-gd-kb-info-1.vercel.app/">
+    <style>
+        /* RESET & BASE */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body { 
+            font-family: 'Courier New', 'Nanum Gothic', monospace; 
+            background-color: #1a1a1a; 
+            color: #e0e0e0; 
+            line-height: 1.6; 
+            padding: 0 20px;
+        }
+        /* TYPOGRAPHY */
+        h1, h2, h3 { font-weight: 800; text-transform: uppercase; letter-spacing: -1px; }
+        h1 { 
+            font-size: 4rem; 
+            color: #ff5500; 
+            text-shadow: 4px 4px 0 #000; 
+            border-left: 8px solid #ff5500; 
+            padding-left: 20px; 
+            margin: 40px 0 20px;
+        }
+        h2 { 
+            font-size: 2.5rem; 
+            color: #ffaa00; 
+            border-bottom: 4px dashed #ffaa00; 
+            padding-bottom: 10px; 
+            margin: 60px 0 30px;
+        }
+        h3 { 
+            font-size: 1.8rem; 
+            color: #ffcc00; 
+            margin: 30px 0 15px;
+        }
+        p, li, blockquote { 
+            font-size: 1.2rem; 
+            margin-bottom: 1rem; 
+        }
+        a { 
+            color: #ff5500; 
+            text-decoration: underline; 
+            text-underline-offset: 4px; 
+            font-weight: bold;
+        }
+        a:hover { 
+            color: #fff; 
+            background: #ff5500; 
+            text-decoration: none;
+        }
+        /* LAYOUT SYSTEM */
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        .section { 
+            background: #222; 
+            padding: 40px 30px; 
+            margin-bottom: 40px; 
+            border: 3px solid #333; 
+            box-shadow: 8px 8px 0 #000;
+        }
+        .section:last-of-type { 
+            margin-bottom: 80px; 
+        }
+        .grid-2 { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 30px; 
+        }
+        .grid-3 { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr; 
+            gap: 20px; 
+        }
+        /* RAW PATTERN */
+        .nav-present {
+            background: #111;
+            padding: 15px 0;
+            border-bottom: 3px solid #ff5500;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-present nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .nav-present a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 8px 15px;
+            border: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .nav-present a:hover {
+            border-color: #ff5500;
+            background: transparent;
+            color: #ff5500;
+        }
+        .hamburger-menu {
+            display: none;
+            background: none;
+            border: 2px solid #ff5500;
+            color: #ff5500;
+            font-size: 1.5rem;
+            padding: 5px 12px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .responsive-768 .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: #111;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                padding: 20px;
+            }
+            .responsive-768 .nav-links.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: block;
+            }
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.8rem; }
+        }
+        .tel-link {
+            display: inline-block;
+            background: #ff5500;
+            color: #000 !important;
+            padding: 12px 25px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            text-decoration: none;
+            border: 3px solid #fff;
+            transition: 0.2s;
+        }
+        .tel-link:hover {
+            background: #fff;
+            color: #ff5500 !important;
+            border-color: #ff5500;
+        }
+        /* CUSTOM STYLES */
+        .info-card {
+            background: #2a2a2a;
+            padding: 25px;
+            border-left: 6px solid #ff5500;
+            margin-bottom: 20px;
+        }
+        .price-tag {
+            font-size: 2rem;
+            color: #00ff88;
+            font-weight: bold;
+        }
+        .badge {
+            display: inline-block;
+            background: #ff5500;
+            color: #000;
+            padding: 4px 12px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        .faq-item {
+            border-bottom: 1px solid #333;
+            padding: 20px 0;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #ffaa00;
+            font-size: 1.3rem;
+            cursor: pointer;
+        }
+        blockquote {
+            border-left: 6px solid #ffaa00;
+            padding: 15px 20px;
+            background: #1e1e1e;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- 네비게이션 (공통) -->
+    <div class="nav-present responsive-768">
+        <nav>
+            <a href="#" style="border: none; font-size: 1.3rem;">공덕 노래방</a>
+            <div class="nav-links" id="navLinks">
+                <a href="/">홈</a>
+                <a href="/info">정보</a>
+                <a href="/price">가격</a>
+                <a href="/review">리뷰</a>
+                <a href="tel:010-6279-0862" class="tel-link">전화 010-6279-0862</a>
+            </div>
+            <button class="hamburger-menu" onclick="toggleNav()">☰</button>
+        </nav>
+    </div>
+
+    <div class="container">
+        <!-- 메인 타이틀 -->
+        <h1>공덕 노래방 정보<br>여기 다 있다</h1>
+        <p style="font-size: 1.4rem; margin-bottom: 40px;">— 가성비 끝판왕, 꾸밈없는 리얼 정보. 니가 찾던 그곳.</p>
+
+        <!-- 섹션 1: 기본 정보 -->
+        <div class="section">
+            <h2>📍 위치 & 연락처</h2>
+            <div class="grid-2">
+                <div class="info-card">
+                    <h3>주소</h3>
+                    <p>서울 마포구 공덕동 ○○○-○○<br>공덕역 4번 출구 도보 3분</p>
+                    <p><span class="badge">지하철</span> 5호선 / 6호선 / 경의중앙선 공덕역</p>
+                </div>
+                <div class="info-card">
+                    <h3>전화</h3>
+                    <p><a href="tel:010-6279-0862" class="tel-link" style="font-size: 2rem;">010-6279-0862</a></p>
+                    <p style="margin-top: 10px;">☎️ 24시 콜 가능. 늦은 밤도 OK</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 섹션 2: 가격 & 시스템 -->
+        <div class="section">
+            <h2>💰 가격 — 미친 가성비</h2>
+            <div class="grid-3">
+                <div class="info-card">
+                    <h3>코인 노래방</h3>
+                    <p class="price-tag">1곡 500원</p>
+                    <p>30분 — 3,000원<br>1시간 — 5,000원</p>
+                    <p><span class="badge">초저가</span> 공덕 최저가</p>
+                </div>
+                <div class="info-card">
+                    <h3>룸 노래방</h3>
+                    <p class="price-tag">1시간 10,000원</p>
+                    <p>2시간 — 15,000원<br>종일 — 30,000원</p>
+                    <p><span class="badge">가성비갑</span> 음료 무료</p>
+                </div>
+                <div class="info-card">
+                    <h3>프리미엄 룸</h3>
+                    <p class="price-tag">1시간 20,000원</p>
+                    <p>사운드 시스템 UP<br>최대 8인</p>
+                    <p><span class="badge">추천</span> 단체 파티</p>
+                </div>
+            </div>
+            <blockquote>
+                "인테리어로 돈 버는 곳 아니다. 오직 노래와 주사위로 승부본다. 가격에 속지 마라."
+            </blockquote>
+        </div>
+
+        <!-- 섹션 3: 시설 & 특징 -->
+        <div class="section">
+            <h2>🎤 시설 — 삐까번쩍? No. 리얼? Yes.</h2>
+            <div class="grid-2">
+                <div>
+                    <h3>✔️ 이거 있다</h3>
+                    <ul>
+                        <li>최신 TJ미디어 반주기 (2024년 업데이트)</li>
+                        <li>JBL 사운드 시스템 (룸 기준)</li>
+                        <li>무료 음료 & 간단한 스낵</li>
+                        <li>24시간 영업 (금토 새벽까지)</li>
+                        <li>주차 가능 (협소, 전화 문의 필수)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>❌ 이거 없다</h3>
+                    <ul>
+                        <li>화려한 인테리어 (벽지 뜯어짐? 있음)</li>
+                        <li>비싼 칵테일 (그딴 거 없음)</li>
+                        <li>웨이터 (셀프 서비스)</li>
+                        <li>가격 폭리 (절대 없음)</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="margin-top: 20px; font-weight: bold;">→ 진짜 노래방 경험을 원한다면 여기다. 거품 없는 리얼.</p>
+        </div>
+
+        <!-- 섹션 4: FAQ -->
+        <div class="section">
+            <h2>❓ 자주 묻는 질문</h2>
+            <div class="faq-item">
+                <div class="faq-question">Q. 예약 필수인가요?</div>
+                <p>A. 주말 저녁(금, 토 18시~22시)은 전화 예약 추천. 평일은 워크인 가능. <a href="tel:010-6279-0862">010-6279-0862</a>로 미리 확인해라.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q. 코인 노래방이랑 룸이랑 차이?</div>
+                <p>A. 코인은 부스 형식, 1곡 단위. 룸은 방, 시간제. 가격은 위에 적었다. 취향 따라 선택해라.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q. 노래방에서 술 되나요?</div>
+                <p>A. 주류 판매는 안 한다. 대신 근처 편의점에서 사 와도 OK. 눈치 보지 마라.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q. 공덕에서 제일 싼 노래방 맞아?</div>
+                <p>A. 맞다. 비교해봐라. 우리가 최저가다. 인정하지 않으면 전화해라. 맞짱 뜬다.</p>
+            </div>
+        </div>
+
+        <!-- 섹션 5: 지역 시그널 / 주변 정보 -->
+        <div class="section">
+            <h2>📍 공덕 노래방 — 지역 시그널</h2>
+            <p>공덕은 마포의 중심. 교통 허브. 하지만 노래방은 드물다. 여기 있는 놈들 다 여기 온다.</p>
+            <div class="grid-2" style="margin-top: 30px;">
+                <div class="info-card">
+                    <h3>🚇 공덕역에서 오는 길</h3>
+                    <p>4번 출구 나와서 직진 200m. GS25 옆 건물 2층. 간판 크지 않음. 찾기 어려우면 전화해라.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🍜 주변 맛집 조합</h3>
+                    <p>노래방 가기 전에 공덕동 '할머니 국수'에서 한 그릇 하고 와라. 완벽한 조합.</p>
+                </div>
+            </div>
+            <p style="margin-top: 30px; text-align: center; font-size: 1.4rem;">
+                <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
+            </p>
+            <p style="text-align: center; margin-top: 10px;">지금 전화해라. 니 목숨 걸고 부를 노래가 기다린다.</p>
+        </div>
+
+        <!-- 푸터 -->
+        <div style="text-align: center; padding: 40px 0; border-top: 2px solid #333;">
+            <p>© 2025 공덕 노래방 정보 — 브루탈리즘, 가성비, 자유로움.</p>
+            <p>문의: <a href="tel:010-6279-0862">010-6279-0862</a></p>
+        </div>
+    </div>
+
+    <script>
+        function toggleNav() {
+            var x = document.getElementById("navLinks");
+            if (x.classList.contains("active")) {
+                x.classList.remove("active");
+            } else {
+                x.classList.add("active");
+            }
+        }
+    </script>
+</body>
+</html>

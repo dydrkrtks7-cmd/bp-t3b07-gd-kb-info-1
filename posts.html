@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/2) · t3b07-gd-kb-info-1</title>
+  <meta name="description" content="t3b07-gd-kb-info-1에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://gongdeok-song-trend.link-hub.org/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* CSS DNA: serif fonts, high contrast, cinematic gradients, drop caps, generous letter-spacing, fine borders */
+ /* Design Version: v6 - Retro Neo-Brut Blend */
+ /* Color Palette: ivory-ink (primary=#2c2416, secondary=#fdfaf3, accent=#8a7355, font=serif) */
+ 
+ :root {
+ --primary: #2c2416;
+ --secondary: #fdfaf3;
+ --accent: #8a7355;
+ --highlight: #e2ff3b; /* Neo-Brut Neon Point */
+ --font-serif: 'Playfair Display', 'Nanum Myeongjo', 'Batang', serif;
+ --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+ --gap: 16px;
+ --padding: 24px;
+ --section-gap: 40px;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ background-color: var(--secondary);
+ color: var(--primary);
+ font-family: var(--font-sans);
+ line-height: 1.75;
+ letter-spacing: 0.03em;
+ overflow-x: hidden;
+ }
+
+ /* Typography spacing & weight */
+ h1, h2, h3 {
+ font-family: var(--font-serif);
+ font-weight: 400;
+ letter-spacing: 0.08em;
+ line-height: 1.3;
+ color: var(--primary);
+ }
+
+ p {
+ font-size: 0.98rem;
+ color: var(--primary);
+ opacity: 0.9;
+ margin-bottom: 1.25rem;
+ word-break: keep-all;
+ }
+
+ /* DOM Noise CSS Comment: #a3f29c */
+
+ /* Header & Navigation */
+ .r-item-uq7j {
+ border-bottom: 1px solid rgba(44, 36, 22, 0.15);
+ padding: 20px var(--padding);
+ background-color: var(--secondary);
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ }
+
+ .v-img-1suw-container {
+ max-width: 1000px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .x-body-4132 {
+ font-family: var(--font-serif);
+ font-size: 1.25rem;
+ font-weight: 700;
+ text-decoration: none;
+ color: var(--primary);
+ letter-spacing: 0.15em;
+ }
+
+ .q-card-646c {
+ display: flex;
+ gap: 24px;
+ list-style: none;
+ }
+
+ .q-card-646c a {
+ text-decoration: none;
+ color: var(--primary);
+ font-size: 0.9rem;
+ font-weight: 500;
+ transition: color 0.3s ease;
+ }
+
+ .q-card-646c a:hover {
+ color: var(--accent);
+ }
+
+ /* Floating Navigation Dot (v6 Feature) */
+ .m-card-lpe2-nav {
+ position: fixed;
+ bottom: 32px;
+ right: 32px;
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+ z-index: 999;
+ }
+
+ .v-img-1suw-dot {
+ width: 12px;
+ height: 12px;
+ border-radius: 50%;
+ background-color: var(--accent);
+ opacity: 0.5;
+ transition: all 0.3s ease;
+ border: 1px solid var(--primary);
+ display: block;
+ text-indent: -9999px;
+ }
+
+ .v-img-1suw-dot:hover, .v-img-1suw-dot.active {
+ opacity: 1;
+ transform: scale(1.3);
+ background-color: var(--primary);
+ }
+
+ /* Hero Section */
+ .r-body-hb57 {
+ position: relative;
+ padding: 100px var(--padding) 60px var(--padding);
+ background: linear-gradient(180deg, rgba(253, 250, 243, 0.5) 0%, rgba(243, 237, 224, 0.8) 100%);
+ border-bottom: 1.5px solid var(--primary);
+ text-align: center;
+ }
+
+ .r-body-hb57-inner {
+ max-width: 720px;
+ margin: 0 auto;
+ }
+
+ .r-body-hb57-tag {
+ font-size: 0.8rem;
+ text-transform: uppercase;
+ letter-spacing: 0.25em;
+ color: var(--accent);
+ margin-bottom: 16px;
+ display: inline-block;
+ border-bottom: 1px solid var(--accent);
+ padding-bottom: 4px;
+ }
+
+ .r-body-hb57 h1 {
+ font-size: 2.5rem;
+ margin-bottom: 24px;
+ word-break: keep-all;
+ }
+
+ .r-body-hb57-desc {
+ font-size: 1.1rem;
+ line-height: 1.8;
+ opacity: 0.85;
+ font-family: var(--font-serif);
+ }
+
+ /* Main Layout */
+ .t-box-loe6-content {
+ max-width: 720px;
+ margin: 0 auto;
+ padding: var(--section-gap) var(--padding);
+ }
+
+ /* 3-Column Grid with intentional misalignment & rotation (v6) */
+ .x-btn-4b89-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: var(--gap);
+ margin: 40px 0;
+ }
+
+ @media (max-width: 768px) {
+ .x-btn-4b89-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ .x-btn-4b89-card {
+ background-color: var(--secondary);
+ border: 1.5px solid var(--primary);
+ border-radius: 24px;
+ padding: var(--padding);
+ box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+ position: relative;
+ transition: transform 0.3s ease;
+ }
+
+ /* Subtle misaligned shadow layer */
+ .x-btn-4b89-card::after {
+ content: '';
+ position: absolute;
+ top: 4px;
+ left: 4px;
+ right: -4px;
+ bottom: -4px;
+ border: 1.5px solid var(--accent);
+ border-radius: 24px;
+ z-index: -1;
+ pointer-events: none;
+ }
+
+ /* Intentional slight rotation for Retro Neo-Brut vibe */
+ .k-btn-861m-rot-1 { transform: rotate(-0.8deg); }
+ .k-btn-861m-rot-2 { transform: rotate(1deg); }
+ .k-btn-861m-rot-3 { transform: rotate(-0.5deg); }
+
+ .k-btn-861m-num {
+ font-family: var(--font-serif);
+ font-size: 1.5rem;
+ color: var(--accent);
+ margin-bottom: 12px;
+ font-weight: bold;
+ }
+
+ .k-btn-861m-title {
+ font-size: 1.1rem;
+ font-weight: 600;
+ margin-bottom: 12px;
+ font-family: var(--font-sans);
+ }
+
+ .k-btn-861m-text {
+ font-size: 0.88rem;
+ line-height: 1.6;
+ opacity: 0.8;
+ margin-bottom: 0;
+ }
+
+ /* Single Column Narrative Elements */
+ .x-body-9eas-section {
+ margin-bottom: 60px;
+ }
+
+ .q-grid-sbej-title {
+ font-size: 1.75rem;
+ margin-bottom: 24px;
+ border-bottom: 1px solid rgba(44, 36, 22, 0.1);
+ padding-bottom: 12px;
+ }
+
+ /* Drop Caps (Editorial Luxury Feature) */
+ .n-btn-xnwx-cap::first-letter {
+ font-size: 3.5rem;
+ font-family: var(--font-serif);
+ float: left;
+ margin-right: 12px;
+ line-height: 0.9;
+ color: var(--accent);
+ font-weight: bold;
+ }
+
+ /* Blockquote with Neon Highlight (v6 Feature) */
+ .x-hero-ztf5-quote {
+ background-color: var(--highlight);
+ color: var(--primary);
+ border-left: 4px solid var(--primary);
+ padding: 20px;
+ margin: 32px 0;
+ font-family: var(--font-serif);
+ font-size: 1.05rem;
+ line-height: 1.7;
+ border-radius: 0 24px 24px 0;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+ }
+
+ /* FAQ Section */
+ .k-wrap-umnh-container {
+ margin-top: var(--section-gap);
+ border-top: 1.5px solid var(--primary);
+ padding-top: var(--section-gap);
+ }
+
+ .k-wrap-umnh-item {
+ margin-bottom: 32px;
+ }
+
+ .k-wrap-umnh-question {
+ font-family: var(--font-serif);
+ font-size: 1.15rem;
+ margin-bottom: 12px;
+ color: var(--primary);
+ display: flex;
+ gap: 12px;
+ }
+
+ .k-wrap-umnh-question-q {
+ color: var(--accent);
+ font-weight: bold;
+ }
+
+ .k-wrap-umnh-answer {
+ padding-left: 28px;
+ font-size: 0.95rem;
+ opacity: 0.85;
+ line-height: 1.7;
+ }
+
+ /* Button: rounded-full (capsule style) */
+ .t-list-yril-container {
+ text-align: center;
+ margin: 40px 0;
+ }
+
+ .m-top-h0oc {
+ display: inline-block;
+ background-color: var(--primary);
+ color: var(--secondary);
+ padding: 14px 32px;
+ border-radius: 9999px; /* Capsule */
+ text-decoration: none;
+ font-size: 0.95rem;
+ font-weight: 600;
+ letter-spacing: 0.1em;
+ transition: all 0.3s ease;
+ border: 1.5px solid var(--primary);
+ }
+
+ .m-top-h0oc:hover {
+ background-color: var(--secondary);
+ color: var(--primary);
+ box-shadow: 4px 4px 0px var(--accent);
+ }
+
+ /* Author Signal */
+ .m-card-9vxd-box {
+ border: 1px solid rgba(44, 36, 22, 0.15);
+ padding: var(--padding);
+ border-radius: 24px;
+ margin-top: 60px;
+ background-color: rgba(138, 115, 85, 0.05);
+ display: flex;
+ gap: 20px;
+ align-items: center;
+ }
+
+ .m-card-9vxd-avatar {
+ width: 60px;
+ height: 60px;
+ border-radius: 50%;
+ background-color: var(--accent);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: var(--secondary);
+ font-family: var(--font-serif);
+ font-size: 1.5rem;
+ font-weight: bold;
+ }
+
+ .m-card-9vxd-info h4 {
+ font-family: var(--font-sans);
+ font-weight: 600;
+ font-size: 1rem;
+ margin-bottom: 4px;
+ }
+
+ .m-card-9vxd-info p {
+ font-size: 0.88rem;
+ margin: 0;
+ opacity: 0.8;
+ }
+
+ /* Footer */
+ .r-head-o8zf {
+ background-color: var(--primary);
+ color: var(--secondary);
+ padding: 48px var(--padding);
+ margin-top: 80px;
+ border-top: 1px solid rgba(44, 36, 22, 0.2);
+ }
+
+ .r-head-o8zf-inner {
+ max-width: 720px;
+ margin: 0 auto;
+ text-align: center;
+ }
+
+ .r-head-o8zf-logo {
+ font-family: var(--font-serif);
+ font-size: 1.1rem;
+ letter-spacing: 0.15em;
+ margin-bottom: 16px;
+ }
+
+ .r-head-o8zf-text {
+ font-size: 0.8rem;
+ opacity: 0.6;
+ margin-bottom: 24px;
+ }
+
+ .r-head-o8zf-links {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ list-style: none;
+ padding: 0;
+ margin-bottom: 24px;
+ }
+
+ .r-head-o8zf-links a {
+ color: var(--secondary);
+ text-decoration: none;
+ font-size: 0.8rem;
+ opacity: 0.8;
+ }
+
+ .r-head-o8zf-links a:hover {
+ opacity: 1;
+ text-decoration: underline;
+ }
+
+ /* DOM Noise CSS Comment: #b4c92e */
+ </style>
+  <meta property="og:title" content="글 목록 (1/2) · t3b07-gd-kb-info-1">
+  <meta property="og:description" content="t3b07-gd-kb-info-1에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://gongdeok-song-trend.link-hub.org/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="r-item-uq7j">
+ <div class="v-img-1suw-container">
+ <a href="/" class="x-body-4132">GONGDEOK TREND</a>
+ <ul class="q-card-646c">
+ <li><a href="#tactics">실무체크</a></li>
+ <li><a href="#comparison">비교안내</a></li>
+ <li><a href="#faq">자주묻는질문</a></li>
+ </ul>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 38개 · 1/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/checklist-001-gjva5g.html">공덕 노래방 정보 선택 전에 확인할 체크리스트와 실패 사례</a>
+        <p class="post-item__summary">공덕 인근에서 노래방을 방문하기 전에는 위치와 이동 동선을 먼저 파악하는 것이 좋습니다. 대중교통 이용 시 공덕역 인근 출구와의 거리를 확인하면 약속 장소로 이동하기 편합니다. 또한 영업시간과 예약</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-1030.html">공덕에서 쾌적한 노래방을 찾는 방법과 이용 팁</a>
+        <p class="post-item__summary">공덕 인근에서 회식이나 모임을 마친 뒤 노래방을 찾는 사람이 많습니다. 노래방을 고를 때는 먼저 자신의 목적에 맞는 곳을 파악하는 것이 중요합니다. 단순히 노래를 부르며 스트레스를 풀기 위한 장소인</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-383.html">공덕에서 최신 음향 시스템을 갖춘 노래방을 선택하는 법</a>
+        <p class="post-item__summary">공덕 지역은 퇴근길에 직장 동료나 친구들과 가볍게 시간을 보내기에 좋은 노래방이 여럿 자리 잡고 있습니다. 노래방을 선택할 때 가장 먼저 고려해야 할 요소는 음향 장비의 품질입니다. 노래방마다 설치</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0417.html">공덕 노래방 정보 활용한 마포/합정 인디 소셜 라운지 가이드 및 파티 팁</a>
+        <p class="post-item__summary">친구들과 소규모 파티를 계획하다 보면 공덕 노래방 정보를 찾아 헤매게 되는 경우가 많습니다. 대개 인원이 적을 때는 적절한 장소를 찾지 못해 고민에 빠지곤 합니다. 이런 분들을 위해 마포와 합정 일</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0418.html">공덕 노래방 정보 확인 시 흔한 오해와 동대문 풋쌤 활용법</a>
+        <p class="post-item__summary">공덕 노래방 정보 찾아보는 이들 중에는 이곳의 서비스 환경이 무조건 24시간 균일한 품질일 것이라고 단정 짓는 경우가 많습니다. 하지만 이는 서비스 산업의 특성을 간과한 오해로, 운영 환경은 인력 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0419.html">공덕 노래방 정보와 지수 성장 클리닉 정보 전략</a>
+        <p class="post-item__summary">성공적인 웹사이트 운영을 위해서는 적절한 콘텐츠 배분과 기술적 지표 충족이 필수적입니다. 공덕 노래방 정보를 찾는 사용자들이 많지만, 그 뒤에는 치열한 검색 노출 경쟁이 숨어 있습니다. 지표 개선을</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0420.html">공덕 노래방 정보 비교하며 마포 럭셔리 단체 가라오케 예약 가이드 살피기</a>
+        <p class="post-item__summary">여러분은 중요한 단체 모임을 앞두고 어떤 기준을 가지고 장소를 선택하시나요? 단순히 공덕 노래방 정보를 검색하는 것만으로 만족스러운 결과를 얻을 수 있을지 의문이 들 때가 있습니다. 업체 선택의 기</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0421.html">공덕 노래방 정보를 통한 구글 알고리즘 감점 치료 및 백링크 수술실</a>
+        <p class="post-item__summary">디지털 공간에서 특정 웹사이트가 갑작스러운 순위 하락을 겪는다면 이는 검색 엔진의 알고리즘으로부터 불이익을 받았다는 신호일 수 있습니다. 마치 우리가 휴식을 위해 공덕 노래방 정보를 찾듯, 웹사이트</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0422.html">공덕 노래방 정보가 말하는 자세한 내용</a>
+        <p class="post-item__summary">성공적인 웹사이트 운영을 위해서는 외부에서 유입되는 데이터의 질을 꼼꼼하게 따져보아야 합니다. 많은 이들이 공덕 노래방 정보를 찾을 때 시설의 청결도를 비교하듯, 백링크 역시 깨끗하고 안전한 경로로</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0423.html">공덕 노래방 정보와 연계된 마포 코인노래방 방음 시설 비교 가이드</a>
+        <p class="post-item__summary">노래방을 선택할 때 많은 이들이 단순히 가격만을 고려하다가 실패를 경험하곤 합니다. 공덕 노래방 정보를 찾는 과정에서도 방음이 제대로 되지 않은 곳을 방문하면 소음 진동 저감이 제대로 되지 않아 즐</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0424.html">공덕 노래방 정보를 활용한 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호</a>
+        <p class="post-item__summary">웹사이트가 검색 결과에 제대로 반영되지 않는다면 이는 크롤러가 사이트를 원활하게 방문하지 못하고 있다는 징후입니다. 공덕 노래방 정보를 찾을 때 접근성이 중요한 것처럼, 검색 엔진 봇에게도 사이트의</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0425.html">공덕 노래방 정보 활용한 안전한 셔츠룸 예약 가이드</a>
+        <p class="post-item__summary">오랜만에 동료들과 저녁 모임을 계획하며 장소를 물색하다 보면 막막함을 느끼기 쉽습니다. 특히 처음 방문하는 지역의 유흥 시설은 정보의 비대칭성 때문에 고민이 깊어지는 지점이기도 합니다. 공덕 노래방</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0426.html">공덕 노래방 정보로 확인하는 마포 유흥 투명 정찰제 가격 정보 디렉토리</a>
+        <p class="post-item__summary">현장에서 가격이 수시로 변한다는 이야기는 사실 유흥 업계의 오래된 오해 중 하나입니다. 합리적인 소비를 지향하는 현대인들은 이미 정찰제를 기본으로 운영하는 곳을 선호하며, 이러한 투명성은 고객 만족</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0427.html">공덕 노래방 정보 기반 마포 홍대 로컬 럭셔리 밤문화 가이드</a>
+        <p class="post-item__summary">세련된 분위기와 수준 높은 서비스를 동시에 충족하는 장소를 찾기는 결코 쉽지 않습니다. 쾌적한 시설은 물론이고 응대 서비스와 접근성까지 고려해야 만족스러운 경험이 가능합니다. 공덕 노래방 정보를 사</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0428.html">공덕 노래방 정보로 알아보는 마포 단체 회식용 대형 룸 노래방 가격 정보</a>
+        <p class="post-item__summary">여러분은 회식 장소를 정할 때 가장 먼저 무엇을 고려하시나요. 아마도 공간의 넓이와 가격의 합리성, 그리고 전체적인 서비스의 만족도가 우선순위에 있을 것입니다. 공덕 노래방 정보를 면밀히 살피는 것</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0429.html">공덕 노래방 정보 활용한 구글 틈새 키워드 트래픽 외환 거래 전략 분석</a>
+        <p class="post-item__summary">디지털 마케팅의 영역에서 특정 지역 키워드를 활용한 전략은 트래픽을 유도하는 중요한 도구로 사용됩니다. 특히 공덕 노래방 정보와 같은 로컬 기반의 검색어는 사용자의 의도가 명확하여 타겟팅에 유리합니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0430.html">공덕 노래방 정보 기반 마포 홍대 단체 가라오케 예약 가이드 정리</a>
+        <p class="post-item__summary">많은 이들이 연말 모임이나 회식을 계획할 때 공덕 노래방 정보 등을 토대로 장소를 물색합니다. 하지만 마포와 홍대 일대에는 유사한 서비스가 많아 선택에 신중함이 요구됩니다. 대규모 인원이 이동해야 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0431.html">공덕 노래방 정보 활용 실패 사례로 본 합정 셔츠룸 단골들이 뽑은 핫플 매거진</a>
+        <p class="post-item__summary">많은 사용자가 공덕 노래방 정보를 검색하며 최적의 장소를 찾으려 노력하지만, 기대와 다른 결과에 실망하는 경우가 많습니다. 특히 방문 전 예약 절차를 제대로 이행하지 않아 현장에서 낭패를 보는 사례</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0432.html">공덕 노래방 정보 확인 시 고려할 구글 신뢰 지수 모발이식 솔루션 분석</a>
+        <p class="post-item__summary">온라인에서 특정 지역의 정보를 찾는 행위와 신뢰도 높은 전문 서비스를 검색하는 일은 본질적으로 맞닿아 있습니다. 공덕 노래방 정보를 찾을 때와 마찬가지로, 중요한 결정을 내려야 하는 상황에서는 구글</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0369.html">공덕 노래방 정보와 마포 셔츠룸 예약 시 눈탱이 피하는 법 핵심 요약</a>
+        <p class="post-item__summary">최근 공덕 노래방 정보를 찾던 한 방문객이 무작정 예약했다가 당혹스러운 추가 요금을 요구받은 사례가 있었습니다. 현장의 분위기나 가격 체계에 대해 전혀 알지 못하고 접근했기에 발생한 전형적인 피해 </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>

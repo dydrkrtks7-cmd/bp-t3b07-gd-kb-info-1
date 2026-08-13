@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · t3b07-gd-kb-info-1</title>
+  <meta name="description" content="t3b07-gd-kb-info-1에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://gongdeok-song-trend.link-hub.org/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* CSS DNA: serif fonts, high contrast, cinematic gradients, drop caps, generous letter-spacing, fine borders */
+ /* Design Version: v6 - Retro Neo-Brut Blend */
+ /* Color Palette: ivory-ink (primary=#2c2416, secondary=#fdfaf3, accent=#8a7355, font=serif) */
+ 
+ :root {
+ --primary: #2c2416;
+ --secondary: #fdfaf3;
+ --accent: #8a7355;
+ --highlight: #e2ff3b; /* Neo-Brut Neon Point */
+ --font-serif: 'Playfair Display', 'Nanum Myeongjo', 'Batang', serif;
+ --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+ --gap: 16px;
+ --padding: 24px;
+ --section-gap: 40px;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ background-color: var(--secondary);
+ color: var(--primary);
+ font-family: var(--font-sans);
+ line-height: 1.75;
+ letter-spacing: 0.03em;
+ overflow-x: hidden;
+ }
+
+ /* Typography spacing & weight */
+ h1, h2, h3 {
+ font-family: var(--font-serif);
+ font-weight: 400;
+ letter-spacing: 0.08em;
+ line-height: 1.3;
+ color: var(--primary);
+ }
+
+ p {
+ font-size: 0.98rem;
+ color: var(--primary);
+ opacity: 0.9;
+ margin-bottom: 1.25rem;
+ word-break: keep-all;
+ }
+
+ /* DOM Noise CSS Comment: #a3f29c */
+
+ /* Header & Navigation */
+ .r-item-uq7j {
+ border-bottom: 1px solid rgba(44, 36, 22, 0.15);
+ padding: 20px var(--padding);
+ background-color: var(--secondary);
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ }
+
+ .v-img-1suw-container {
+ max-width: 1000px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .x-body-4132 {
+ font-family: var(--font-serif);
+ font-size: 1.25rem;
+ font-weight: 700;
+ text-decoration: none;
+ color: var(--primary);
+ letter-spacing: 0.15em;
+ }
+
+ .q-card-646c {
+ display: flex;
+ gap: 24px;
+ list-style: none;
+ }
+
+ .q-card-646c a {
+ text-decoration: none;
+ color: var(--primary);
+ font-size: 0.9rem;
+ font-weight: 500;
+ transition: color 0.3s ease;
+ }
+
+ .q-card-646c a:hover {
+ color: var(--accent);
+ }
+
+ /* Floating Navigation Dot (v6 Feature) */
+ .m-card-lpe2-nav {
+ position: fixed;
+ bottom: 32px;
+ right: 32px;
+ display: flex;
+ flex-direction: column;
+ gap: 12px;
+ z-index: 999;
+ }
+
+ .v-img-1suw-dot {
+ width: 12px;
+ height: 12px;
+ border-radius: 50%;
+ background-color: var(--accent);
+ opacity: 0.5;
+ transition: all 0.3s ease;
+ border: 1px solid var(--primary);
+ display: block;
+ text-indent: -9999px;
+ }
+
+ .v-img-1suw-dot:hover, .v-img-1suw-dot.active {
+ opacity: 1;
+ transform: scale(1.3);
+ background-color: var(--primary);
+ }
+
+ /* Hero Section */
+ .r-body-hb57 {
+ position: relative;
+ padding: 100px var(--padding) 60px var(--padding);
+ background: linear-gradient(180deg, rgba(253, 250, 243, 0.5) 0%, rgba(243, 237, 224, 0.8) 100%);
+ border-bottom: 1.5px solid var(--primary);
+ text-align: center;
+ }
+
+ .r-body-hb57-inner {
+ max-width: 720px;
+ margin: 0 auto;
+ }
+
+ .r-body-hb57-tag {
+ font-size: 0.8rem;
+ text-transform: uppercase;
+ letter-spacing: 0.25em;
+ color: var(--accent);
+ margin-bottom: 16px;
+ display: inline-block;
+ border-bottom: 1px solid var(--accent);
+ padding-bottom: 4px;
+ }
+
+ .r-body-hb57 h1 {
+ font-size: 2.5rem;
+ margin-bottom: 24px;
+ word-break: keep-all;
+ }
+
+ .r-body-hb57-desc {
+ font-size: 1.1rem;
+ line-height: 1.8;
+ opacity: 0.85;
+ font-family: var(--font-serif);
+ }
+
+ /* Main Layout */
+ .t-box-loe6-content {
+ max-width: 720px;
+ margin: 0 auto;
+ padding: var(--section-gap) var(--padding);
+ }
+
+ /* 3-Column Grid with intentional misalignment & rotation (v6) */
+ .x-btn-4b89-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: var(--gap);
+ margin: 40px 0;
+ }
+
+ @media (max-width: 768px) {
+ .x-btn-4b89-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ .x-btn-4b89-card {
+ background-color: var(--secondary);
+ border: 1.5px solid var(--primary);
+ border-radius: 24px;
+ padding: var(--padding);
+ box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+ position: relative;
+ transition: transform 0.3s ease;
+ }
+
+ /* Subtle misaligned shadow layer */
+ .x-btn-4b89-card::after {
+ content: '';
+ position: absolute;
+ top: 4px;
+ left: 4px;
+ right: -4px;
+ bottom: -4px;
+ border: 1.5px solid var(--accent);
+ border-radius: 24px;
+ z-index: -1;
+ pointer-events: none;
+ }
+
+ /* Intentional slight rotation for Retro Neo-Brut vibe */
+ .k-btn-861m-rot-1 { transform: rotate(-0.8deg); }
+ .k-btn-861m-rot-2 { transform: rotate(1deg); }
+ .k-btn-861m-rot-3 { transform: rotate(-0.5deg); }
+
+ .k-btn-861m-num {
+ font-family: var(--font-serif);
+ font-size: 1.5rem;
+ color: var(--accent);
+ margin-bottom: 12px;
+ font-weight: bold;
+ }
+
+ .k-btn-861m-title {
+ font-size: 1.1rem;
+ font-weight: 600;
+ margin-bottom: 12px;
+ font-family: var(--font-sans);
+ }
+
+ .k-btn-861m-text {
+ font-size: 0.88rem;
+ line-height: 1.6;
+ opacity: 0.8;
+ margin-bottom: 0;
+ }
+
+ /* Single Column Narrative Elements */
+ .x-body-9eas-section {
+ margin-bottom: 60px;
+ }
+
+ .q-grid-sbej-title {
+ font-size: 1.75rem;
+ margin-bottom: 24px;
+ border-bottom: 1px solid rgba(44, 36, 22, 0.1);
+ padding-bottom: 12px;
+ }
+
+ /* Drop Caps (Editorial Luxury Feature) */
+ .n-btn-xnwx-cap::first-letter {
+ font-size: 3.5rem;
+ font-family: var(--font-serif);
+ float: left;
+ margin-right: 12px;
+ line-height: 0.9;
+ color: var(--accent);
+ font-weight: bold;
+ }
+
+ /* Blockquote with Neon Highlight (v6 Feature) */
+ .x-hero-ztf5-quote {
+ background-color: var(--highlight);
+ color: var(--primary);
+ border-left: 4px solid var(--primary);
+ padding: 20px;
+ margin: 32px 0;
+ font-family: var(--font-serif);
+ font-size: 1.05rem;
+ line-height: 1.7;
+ border-radius: 0 24px 24px 0;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+ }
+
+ /* FAQ Section */
+ .k-wrap-umnh-container {
+ margin-top: var(--section-gap);
+ border-top: 1.5px solid var(--primary);
+ padding-top: var(--section-gap);
+ }
+
+ .k-wrap-umnh-item {
+ margin-bottom: 32px;
+ }
+
+ .k-wrap-umnh-question {
+ font-family: var(--font-serif);
+ font-size: 1.15rem;
+ margin-bottom: 12px;
+ color: var(--primary);
+ display: flex;
+ gap: 12px;
+ }
+
+ .k-wrap-umnh-question-q {
+ color: var(--accent);
+ font-weight: bold;
+ }
+
+ .k-wrap-umnh-answer {
+ padding-left: 28px;
+ font-size: 0.95rem;
+ opacity: 0.85;
+ line-height: 1.7;
+ }
+
+ /* Button: rounded-full (capsule style) */
+ .t-list-yril-container {
+ text-align: center;
+ margin: 40px 0;
+ }
+
+ .m-top-h0oc {
+ display: inline-block;
+ background-color: var(--primary);
+ color: var(--secondary);
+ padding: 14px 32px;
+ border-radius: 9999px; /* Capsule */
+ text-decoration: none;
+ font-size: 0.95rem;
+ font-weight: 600;
+ letter-spacing: 0.1em;
+ transition: all 0.3s ease;
+ border: 1.5px solid var(--primary);
+ }
+
+ .m-top-h0oc:hover {
+ background-color: var(--secondary);
+ color: var(--primary);
+ box-shadow: 4px 4px 0px var(--accent);
+ }
+
+ /* Author Signal */
+ .m-card-9vxd-box {
+ border: 1px solid rgba(44, 36, 22, 0.15);
+ padding: var(--padding);
+ border-radius: 24px;
+ margin-top: 60px;
+ background-color: rgba(138, 115, 85, 0.05);
+ display: flex;
+ gap: 20px;
+ align-items: center;
+ }
+
+ .m-card-9vxd-avatar {
+ width: 60px;
+ height: 60px;
+ border-radius: 50%;
+ background-color: var(--accent);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: var(--secondary);
+ font-family: var(--font-serif);
+ font-size: 1.5rem;
+ font-weight: bold;
+ }
+
+ .m-card-9vxd-info h4 {
+ font-family: var(--font-sans);
+ font-weight: 600;
+ font-size: 1rem;
+ margin-bottom: 4px;
+ }
+
+ .m-card-9vxd-info p {
+ font-size: 0.88rem;
+ margin: 0;
+ opacity: 0.8;
+ }
+
+ /* Footer */
+ .r-head-o8zf {
+ background-color: var(--primary);
+ color: var(--secondary);
+ padding: 48px var(--padding);
+ margin-top: 80px;
+ border-top: 1px solid rgba(44, 36, 22, 0.2);
+ }
+
+ .r-head-o8zf-inner {
+ max-width: 720px;
+ margin: 0 auto;
+ text-align: center;
+ }
+
+ .r-head-o8zf-logo {
+ font-family: var(--font-serif);
+ font-size: 1.1rem;
+ letter-spacing: 0.15em;
+ margin-bottom: 16px;
+ }
+
+ .r-head-o8zf-text {
+ font-size: 0.8rem;
+ opacity: 0.6;
+ margin-bottom: 24px;
+ }
+
+ .r-head-o8zf-links {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+ list-style: none;
+ padding: 0;
+ margin-bottom: 24px;
+ }
+
+ .r-head-o8zf-links a {
+ color: var(--secondary);
+ text-decoration: none;
+ font-size: 0.8rem;
+ opacity: 0.8;
+ }
+
+ .r-head-o8zf-links a:hover {
+ opacity: 1;
+ text-decoration: underline;
+ }
+
+ /* DOM Noise CSS Comment: #b4c92e */
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · t3b07-gd-kb-info-1">
+  <meta property="og:description" content="t3b07-gd-kb-info-1에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://gongdeok-song-trend.link-hub.org/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="r-item-uq7j">
+ <div class="v-img-1suw-container">
+ <a href="/" class="x-body-4132">GONGDEOK TREND</a>
+ <ul class="q-card-646c">
+ <li><a href="#tactics">실무체크</a></li>
+ <li><a href="#comparison">비교안내</a></li>
+ <li><a href="#faq">자주묻는질문</a></li>
+ </ul>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 38개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0397.html">공덕 노래방 정보를 통해 마곡 유흥 추천정보를 확인하는 단계별 요령</a>
+        <p class="post-item__summary">일상에서 흔히 접하는 공덕 노래방 정보를 살펴보면 지역별 문화 특색을 이해하는 데 큰 도움이 됩니다. 단순히 검색에 의존하기보다 특정 상권의 신뢰도를 파악하는 자신만의 기준을 정립하는 것이 좋습니다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0398.html">공덕 노래방 정보와 합정 노래방 추천정보의 가격 체계 대조 분석</a>
+        <p class="post-item__summary">지역별로 공덕 노래방 정보를 비교해 보면 각기 다른 가격 정책과 서비스 환경을 확인할 수 있습니다. 합정 지역의 시설을 이용할 때도 어떤 기준으로 비용을 지불하는지 미리 이해하는 것이 합리적인 선택</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0399.html">공덕 노래방 정보로 살펴보는 연남 클럽 추천정보 이용 전 실패 예방</a>
+        <p class="post-item__summary">일반적인 공덕 노래방 정보를 찾는 과정에서 겪는 혼란은 연남 지역의 시설을 이용할 때도 비슷하게 나타납니다. 특히 예약을 제대로 진행하지 않아 당일 현장에서 낭패를 보는 경우가 생각보다 많습니다. </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0400.html">공덕 노래방 정보를 통한 합정 셔츠룸 추천정보 선택 체크리스트</a>
+        <p class="post-item__summary">다양한 공덕 노래방 정보를 분석하는 습관은 합정 셔츠룸 추천정보를 검토할 때도 큰 밑거름이 됩니다. 매장을 선택할 때 단순히 분위기만 볼 것이 아니라 위치와 접근성이라는 현실적인 요소를 체크리스트에</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0401.html">공덕 노래방 정보 확인하고 가라오케 이용할 때 주의할 점</a>
+        <p class="post-item__summary">갑작스러운 회식이나 비즈니스 미팅 이후 마땅한 장소를 찾지 못해 당황했던 경험이 한 번쯤은 있을 것입니다. 공덕 지역은 유동 인구가 많아 다양한 시설이 밀집해 있지만, 정작 필요한 장소의 상세한 성</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0402.html">공덕 노래방 정보 검색 말고 상수 마사지 추천정보 활용하기</a>
+        <p class="post-item__summary">많은 이들이 피로를 풀기 위해 단순히 화려한 간판을 보고 업소를 선택하곤 하지만 이는 큰 오해입니다. 흔히 알려진 공덕 노래방 정보 같은 유흥 관련 키워드에만 몰두하다 보면 정작 본인의 건강과 휴식</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0403.html">공덕 노래방 정보 보다 망원 노래방 추천정보로 즐기는 법</a>
+        <p class="post-item__summary">시설의 청결도, 음향 시스템의 성능, 그리고 서비스의 친절함까지 이 모든 것을 충족해야 비로소 훌륭한 장소라 부를 수 있습니다. 단순히 공덕 노래방 정보 등을 찾아보는 일반적인 접근보다는 지역별로 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0404.html">공덕 노래방 정보 궁금한 당신 홍대 노래방 추천정보 확인</a>
+        <p class="post-item__summary">혹시 오늘 밤 열정적인 에너지를 발산할 수 있는 완벽한 장소를 찾고 계신가요? 공덕 노래방 정보 같은 광범위한 키워드만 검색하며 고민하기보다, 본인이 원하는 분위기에 딱 맞는 곳을 고르는 것이 훨씬</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0405.html">공덕 노래방 정보 확인하며 셔츠룸 추천정보 선택하는 절차</a>
+        <p class="post-item__summary">공덕 노래방 정보를 찾는 과정에서 많은 이용자가 셔츠룸이라는 독특한 문화 형식을 접하게 됩니다. 신뢰할 수 있는 정보를 판별하기 위해서는 무엇보다 업체가 제공하는 서비스의 범위와 운영 방침을 먼저 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0406.html">공덕 노래방 정보 비교를 통한 연남 유흥 추천정보 분석</a>
+        <p class="post-item__summary">공덕 노래방 정보를 찾다가 인근 연남 지역으로 눈길을 돌리는 분들이 많습니다. 홍대와 가까운 연남은 독특한 개성을 가진 유흥 업소가 밀집해 있는데, 여기서 중요한 것은 서비스 대비 가격이 합리적인지</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260722-0407.html">공덕 노래방 정보 확인 후 마곡 가라오케 추천정보 예약</a>
+        <p class="post-item__summary">많은 이들이 공덕 노래방 정보를 탐색하다가 업무지구로 부상하는 마곡으로 이동하여 가라오케를 찾습니다. 하지만 예약을 시도할 때 의외로 많은 사람들이 기본적인 절차를 간과하여 낭패를 보곤 합니다. 성</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/interview-001-1jgiup1.html">공덕 노래방 정보 경험자에게 물어본 현실적인 판단 기준</a>
+        <p class="post-item__summary">아, 진짜... 게임 밸런스 분석에 있어 가장 중요한 것은 실제 플레이 중 발생하는 다양한 상황과 그 결과입니다. 이번 테라포밍 마스의 비너스 확장은 특정 2인 전략에서 게임 밸런스를 완전히 무너뜨</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-1.html">공덕 노래방 정보</a>
+        <p class="post-item__summary">공덕 일대는 주거 지역과 업무 시설이 밀집되어 있어 다양한 여가 공간이 형성되어 있습니다. 이 지역에서는 노래방을 찾는 소비자의 수요가 꾸준히 유지되고 있으며, 이용 목적에 따라 소규모 프라이빗 룸</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/juice-2.html">공덕 노래방 정보</a>
+        <p class="post-item__summary">공덕 지역은 교통 요지이자 젊은 직장인과 학생의 방문이 잦은 상권으로, 노래방 수요가 꾸준하게 유지되는 특징이 있습니다. 이 지역은 주요 역세권과 도보 거리 내 연결성이 좋아 점심 시간이나 퇴근 이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-002-gjva5g.html">공덕 노래방 정보에 관한 흔한 오해, 직접 확인해보니 달랐던 점</a>
+        <p class="post-item__summary">공덕 노래방 정보를 찾아볼 때 많은 이용자들이 온라인에 떠도는 대략적인 설명만 믿고 방문했다가 예상과 다른 시설 분위기나 서비스 형태에 놀라곤 합니다. 오피스 상권과 주거 지역이 함께 공존하는 공덕</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-1.html">공덕 노래방 카드 결제 가이드</a>
+        <p class="post-item__summary">노래방 이용 시 지출을 효율적으로 관리하려면 결제 수단 선택이 중요합니다. 특히 공덕 지역의 노래방을 이용하는 경우, 신용카드나 체크카드의 결제 이벤트를 미리 확인하는 것이 좋습니다. 대부분의 카드</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-2.html">공덕 노래방 방문 전 안전 수칙 안내</a>
+        <p class="post-item__summary">노래방 방문은 친목 도모와 여가선용의 목적으로 자주 이루어지며, 특히 공덕 지역은 다양한 업소가 밀집되어 있어 이용객이 많습니다. 이때 이용자는 안전한 환경을 위해 필수적인 주의사항을 사전에 인지하</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/normal-3.html">공덕 노래방 정보 안내</a>
+        <p class="post-item__summary">공덕 지역에서 노래방을 찾고 계신다면, 우선 해당 지역의 업종 분포와 기본 서비스 유형을 파악하는 것이 도움이 됩니다. 노래방은 다양한 테마와 시설을 보유하고 있어, 방문 목적에 따라 선택지가 달라</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
